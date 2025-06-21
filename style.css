@@ -1,0 +1,84 @@
+Reset افتراضي بسيط
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    min-height: 100vh;
+} 
+
+ h2 {
+    font-size: 26px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: #00ffc8;
+ }
+
+ .links {
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 30px 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+}
+
+.links h1 {
+    font-size: 28px;
+    margin-bottom: 25px;
+    color: #ffffff;
+    border-bottom: 2px solid #00ffc8;
+    /* display: inline-block; */
+    padding-bottom: 5px;
+}
+
+ .link-button {
+    display: block;
+    width: 90%;
+    margin: 12px 0;
+    padding: 14px;
+    border-radius: 8px;
+    background-color: #00ffc8;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 17px;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.link-button:hover {
+    background-color: #00e6b3;
+    transform: scale(1.03);
+} 
+
+ @media (max-width: 500px) {
+    body {
+        padding: 20px 10px;
+    }
+
+    .links {
+        padding: 20px 15px;
+    }
+
+    .link-button {
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    .links h1 {
+        font-size: 24px;
+    }
+}

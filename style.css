@@ -1,120 +1,106 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&display=swap');
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
-    font-family: 'Fira Code', monospace;
-    background: linear-gradient(135deg, #1a1a1a, #0d0d0d);
-    color: #e0e0e0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 40px 20px;
-    min-height: 100vh;
+  margin: 0;
+  font-family: 'Fira Code', monospace;
+  background: #0d0d0d;
+  color: #e0e0e0;
+  text-align: center;
+  overflow-x: hidden;
+  min-height: 100vh;
 }
 
-h2 {
-    font-size: 26px;
-    margin-bottom: 20px;
-    font-weight: 600;
-    color: #00ff99;
+.glow-text {
+  font-size: 2.4rem;
+  color: #00ff99;
+  text-shadow: 0 0 10px #00ff99, 0 0 20px #00ff99, 0 0 40px #00ff99;
+  margin-top: 25px;
+}
+
+.subtitle {
+  color: #aaa;
+  font-weight: 400;
+  font-size: 1rem;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+}
+
+.lang-switch button {
+  background: transparent;
+  border: 1px solid #00ff99;
+  color: #00ff99;
+  padding: 6px 12px;
+  margin: 4px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: 'Fira Code', monospace;
+  transition: all 0.3s;
+}
+.lang-switch button:hover {
+  background: #00ff99;
+  color: #111;
+}
+
+.profile-card {
+  background: rgba(20,20,20,0.9);
+  border: 1px solid rgba(0,255,153,0.2);
+  border-radius: 15px;
+  padding: 20px;
+  margin: 20px auto;
+  width: 85%;
+  max-width: 500px;
+  box-shadow: 0 0 15px rgba(0,255,153,0.3);
+}
+
+.profile-card .avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 3px solid #00ff99;
+  margin-bottom: 15px;
+  transition: transform 0.3s;
+}
+.profile-card .avatar:hover {
+  transform: scale(1.07);
 }
 
 .links {
-    background-color: rgba(255, 255, 255, 0.03);
-    padding: 30px 20px;
-    border-radius: 15px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
-    text-align: center;
-    max-width: 400px;
-    width: 100%;
+  margin: 30px auto;
+  width: 85%;
+  max-width: 600px;
 }
 
-.links h1 {
-    font-size: 28px;
-    margin-bottom: 25px;
-    color: #ffffff;
-    border-bottom: 2px solid #00ff99;
-    padding-bottom: 5px;
+.glow-title {
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+  color: #00ff99;
+  text-shadow: 0 0 15px #00ff99;
 }
 
 .link-button {
-    display: block;
-    width: 90%;
-    margin: 12px auto;
-    padding: 14px;
-    border-radius: 8px;
-    background-color: #00ff99;
-    color: #0d0d0d;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 17px;
-    transition: transform 0.2s ease, background-color 0.3s ease;
+  display: block;
+  background: #111;
+  color: #00ff99;
+  border: 1px solid #00ff99;
+  padding: 14px;
+  margin: 10px 0;
+  text-decoration: none;
+  font-size: 1rem;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: all 0.3s;
 }
-
-.link-button:hover {
-    background-color: #00cc7a;
-    transform: scale(1.04);
-}
-
 .link-button i {
-    margin-right: 10px;
+  margin-right: 10px;
+  color: #00ff99;
 }
-
-.profile {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.profile img {
-    width: 120px;
-    height: 120px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 3px solid #00ff99;
-    margin-bottom: 15px;
-    box-shadow: 0 0 15px rgba(0, 255, 153, 0.4);
-}
-
-.profile p {
-    color: #cccccc;
-    font-size: 15px;
-    line-height: 1.5;
-    max-width: 360px;
-    margin: 0 auto;
-    padding: 0 10px;
+.link-button:hover {
+  background: #00ff99;
+  color: #111;
+  box-shadow: 0 0 15px #00ff99;
 }
 
 footer {
-    margin-top: 40px;
-    text-align: center;
-    color: #666;
-    font-size: 13px;
+  margin-top: 40px;
+  font-size: 0.85rem;
+  color: #666;
 }
 
-@media (max-width: 500px) {
-    body {
-        padding: 20px 10px;
-    }
-
-    .links {
-        padding: 20px 15px;
-    }
-
-    .link-button {
-        font-size: 15px;
-        padding: 12px;
-    }
-
-    h2 {
-        font-size: 22px;
-    }
-
-    .links h1 {
-        font-size: 24px;
-    }
-}

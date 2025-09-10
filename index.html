@@ -1,52 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <title>My Links</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Personal page of BRAHIM Youcef - Computer Science Student & Web Developer.">
+  <meta name="author" content="BRAHIM Youcef">
+
+  <title> BRAHIM Youcef - CS Student</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-
-    <h2>BRAHIM Youcef</h2>
-
-     <div class="profile">
-        <img src="profile.jpg" alt="My Photo">
-        <p>I am a <strong>Web Developer</strong> and <strong>Computer Science student</strong> (2nd year). Passionate about coding and building modern websites and apps.</p>
+  <header>
+    <h1 class="glow-text"> BRAHIM Youcef</h1>
+    <h3 class="subtitle">Computer Science Student | Web Developer</h3>
+    <div class="lang-switch">
+      <button onclick="setLang('en')">EN</button>
+      <button onclick="setLang('fr')">FR</button>
+      <button onclick="setLang('ar')">AR</button>
     </div>
+  </header>
 
-     <div class="links">
-        <h1>My Links</h1>
-        
-        <a class="link-button" href="https://www.facebook.com/cefyou20220427Had" target="_blank">
-            <i class="fab fa-facebook"></i> Facebook
-        </a>
+   <div class="profile-card">
+    <img src="profile.jpg" alt="My Photo" class="avatar">
+    <p id="about">
+      I am a <strong>Computer Science student</strong> and <strong>Web Developer</strong> (2nd year). Obsessed with coding, algorithms, and building real-world projects.
+    </p>
+  </div>
 
-        <a class="link-button" href="https://www.instagram.com/youcef._.0049/" target="_blank">
-            <i class="fab fa-instagram"></i> Instagram
-        </a>
+   <section class="links">
+    <h2 id="links-title" class="glow-title"> My Links</h2>
 
-        <a class="link-button" href="https://www.linkedin.com/in/%D8%A8%D8%B1%D8%A7%D9%87%D9%8A%D9%85-%D9%8A%D9%88%D8%B3%D9%81-a534b7217/" target="_blank">
-            <i class="fab fa-linkedin"></i> LinkedIn
-        </a>
+    <a class="link-button" href="https://www.facebook.com/cefyou20220427Had" target="_blank">
+      <i class="fab fa-facebook"></i> Facebook
+    </a>
 
-        <a class="link-button" href="https://t.me/youceef0715" target="_blank">
-            <i class="fab fa-telegram"></i> Telegram
-        </a>
+    <a class="link-button" href="https://www.instagram.com/youcef._.0049/" target="_blank">
+      <i class="fab fa-instagram"></i> Instagram
+    </a>
 
-        <a class="link-button" href="https://github.com/joseph-cef" target="_blank">
-            <i class="fab fa-github"></i> GitHub
-        </a>
+    <a class="link-button" href="https://www.linkedin.com/in/%D8%A8%D8%B1%D8%A7%D9%87%D9%8A%D9%85-%D9%8A%D9%88%D8%B3%D9%81-a534b7217/" target="_blank">
+      <i class="fab fa-linkedin"></i> LinkedIn
+    </a>
 
-        <a class="link-button" href="https://joseph-cef.github.io/Portfolio-cefyou/" target="_blank">
-            <i class="fas fa-globe"></i> Portfolio
-        </a>
-    </div>
+    <a class="link-button" href="https://t.me/youceef0715" target="_blank">
+      <i class="fab fa-telegram"></i> Telegram
+    </a>
 
-     <footer>
-        <p>&copy; 2025 BRAHIM Youcef</p>
-    </footer>
+    <a class="link-button" href="https://github.com/joseph-cef" target="_blank">
+      <i class="fab fa-github"></i> GitHub
+    </a>
 
+    <a class="link-button" href="https://joseph-cef.github.io/Portfolio-cefyou/" target="_blank">
+      <i class="fas fa-globe"></i> Portfolio
+    </a>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 BRAHIM Youcef | Coded with ☕ & 🚬</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

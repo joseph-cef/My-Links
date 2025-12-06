@@ -1,0 +1,15 @@
+🚀 BRAHIM Youcef | Cosmic Dev Portal 🌌About the ProjectThis project is a professional and highly engaging Personal Links Portal, specifically designed for Computer Science students and Web Developers. The design features an immersive, futuristic, and cosmic theme utilizing strong Neon Glow effects, a dynamic background video, and incorporates a powerful 3D Parallax Effect for an interactive user experience.🌟 Key FeaturesImmersive Cosmic Design: Uses dark neon colors and futuristic typefaces (Orbitron).Dynamic Background: Includes a background video loop for a unique, space-like feel.3D Parallax Effect: Cards and links subtly shift in response to mouse movement, adding depth and interactivity (requires space-script.js).Frosted Glass Card: Uses backdrop-filter to ensure readability over the moving background while maintaining a sleek, transparent aesthetic.Fully Responsive: Optimized to function perfectly on all screen sizes (smartphones, tablets, and desktops).🛠️ Tech StackTechnologyDescriptionHTML5The basic page structure.CSS3Powerful styling using Variables, Flexbox, Grid, and Keyframe Animations.JavaScript (Vanilla JS)Used to implement the Parallax Effect logic.Font Awesome 6For social media icons.⚙️ Setup and InstallationTo get this project running locally, please follow these steps:PrerequisitesA modern web browser (Chrome, Firefox, Edge).A code editor (VS Code or similar).Installation StepsClone the repository:Bashgit clone [Your Repository Link]
+Navigate to the folder:Bashcd [Folder Name]
+Add Required Media Files:Add your profile image and name it profile.jpg.Add a space-themed MP4 video loop and name it space-background.mp4. (Search for "free space video loop" on sites like Pexels or Pixabay).(Optional) Add a fallback image named space-fallback.jpg.Launch the Project:Simply open the index.html file in your web browser.🚀 CustomizationYou can easily customize the design elements to make this portal uniquely yours:1. Colors and Theme (CSS Variables)All core neon and background colors can be adjusted in the :root section of the space-style.css file:CSS:root {
+    --color-neon-blue: #00e5ff;    /* Primary glow color */
+    --color-neon-purple: #ae00ff;  /* Secondary glow color */
+    --color-dark-space: #0a0a1a;  /* Deep space background color */
+    /* ... other variables */
+}
+2. Links and Icons (HTML)Modify your links and text within the index.html file. Ensure you keep the specific class names (link-facebook, link-github, etc.) to retain the unique hover colors:HTML<a class="cosmic-link-button link-facebook parallax-card" href="YOUR ACCOUNT LINK HERE" target="_blank" data-depth="0.1">
+    <i class="fab fa-facebook-f fa-2x"></i>
+    <span class="link-text">Facebook</span>
+</a>
+3. Parallax Sensitivity (JavaScript)To make the Parallax effect stronger or weaker, adjust the multiplier in the space-script.js file:JavaScript// space-script.js
+const moveX = (clientX - centerX) * depth * -0.05; // -0.05 controls the sensitivity
+const moveY = (clientY - centerY) * depth * -0.05;

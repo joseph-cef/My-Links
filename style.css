@@ -4,7 +4,7 @@
     --bg-card-soft: #080b18;
     --border-soft: #1f2933;
 
-    --accent: #00b4ff;         /* لون أزرق بسيط */
+    --accent: #00b4ff;          
     --accent-soft: #0b4777;
 
     --text-main: #e5e7eb;
@@ -39,8 +39,7 @@ body {
     align-items: center;
 }
 
-/* خلفية داكنة بسيطة بدون بريق */
-.background-layer {
+ .background-layer {
     position: fixed;
     inset: 0;
     z-index: -1;
@@ -96,7 +95,7 @@ body {
     color: #f9fafb;
     letter-spacing: 2px;
     margin-bottom: 6px;
-    text-shadow: none; /* لا نيون */
+    text-shadow: none;  
 }
 
 .cosmic-subtitle {
@@ -105,8 +104,7 @@ body {
     margin-top: 6px;
 }
 
-/* PROFILE CARD */
-.profile-module {
+ .profile-module {
     background: var(--bg-card);
     border-radius: var(--card-radius);
     border: 1px solid var(--border-soft);
@@ -177,8 +175,7 @@ body {
     color: var(--text-muted);
 }
 
-/* سطر الكود – هادي يعطي إحساس CS student */
-.code-line {
+ .code-line {
     margin-top: 12px;
     padding: 9px 10px;
     border-radius: 10px;
@@ -216,8 +213,7 @@ body {
 }
 
 .neon-glow {
-    /* بدون glow، مجرد نص عادي أفتح قليلاً */
-    color: #e5e7eb;
+     color: #e5e7eb;
 }
 
 .focus-card {
@@ -324,8 +320,7 @@ body {
     margin-top: 2px;
 }
 
-/* Hover عام بسيط بدون ألوان قوية */
-.cosmic-link-button:hover {
+ .cosmic-link-button:hover {
     transform: translateY(-3px);
     border-color: var(--accent-soft);
     box-shadow: 0 14px 30px rgba(0, 0, 0, 0.65);

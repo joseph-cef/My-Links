@@ -24,8 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // For future language switch if you add multi-language later
-    window.setLang = function (lang) {
+     window.setLang = function (lang) {
         console.log('Language set to:', lang);
     };
 });

@@ -7,15 +7,22 @@
 
 const profile = {
   // Personal Information
-  firstName: "Joseph",
-  lastName: "Dev",
-  fullName: "Joseph Dev",
-  title: "Software Engineer | Web & Mobile Developer",
-  bio: "Passionate about technology and innovation. I build modern web and mobile applications and love turning ideas into real digital solutions.",
+  firstName: "BRAHIM",
+  lastName: "Youcef",
+  fullName: "BRAHIM Youcef",
+  title: "CS Student (L3) | Web & Software Developer",
+  bio: "I'm BRAHIM Youcef, a third-year Computer Science student (L3) passionate about turning ideas into practical, real-world applications.\n\nI focus on Web Development, enjoy building meaningful projects, exploring new technologies, and continuously strengthening my problem-solving and software engineering skills.",
   profileImage: "/profile.jpg",
 
   // Skill Tags
-  skills: ["Web Dev", "Mobile Dev", "Problem Solver", "Lifelong Learner"],
+  skills: ["CS Student (L3)", "Web Development", "Software Engineering", "Problem Solver", "Continuous Learner"],
+
+  // Code Snippet (CS student mode)
+  codeSnippet: {
+    filename: "student_mode.js",
+    comment: "// CS student mode:",
+    code: `// CS student mode:\nwhile (true) {\n    learn();\n    build();\n    secure();\n    innovate();\n}`,
+  },
 
   // Club Branding
   club: {
@@ -50,14 +57,6 @@ const profile = {
       subtitle: "Let's talk",
       url: "https://t.me/youceef0715",
       accent: "#26A5E4",
-      accentGradient: null,
-    },
-    {
-      id: "facebook",
-      platform: "Facebook",
-      subtitle: "Connect with me",
-      url: "https://www.facebook.com/share/19cHD4bssj/",
-      accent: "#1877F2",
       accentGradient: null,
     },
     {

@@ -40,7 +40,7 @@ export default function ProfileHero() {
 
       {/* Name */}
       <h1 className="profile-name animate-fade-in animate-delay-2">
-        <span className="profile-name-first">{profile.firstName} </span>
+        <span className="profile-name-first">{profile.firstName}</span>
         <span className="profile-name-last">{profile.lastName}</span>
       </h1>
 

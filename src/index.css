@@ -113,21 +113,23 @@ body {
 /* Large watermark logo in upper-right */
 .bg-watermark {
   position: absolute;
-  top: 80px;
-  right: -40px;
-  width: 320px;
-  height: 320px;
-  opacity: 0.04;
-  transform: rotate(5deg);
+  top: 70px;
+  right: -30px;
+  width: 380px;
+  height: 380px;
+  opacity: 0.12;
+  transform: rotate(4deg);
+  pointer-events: none;
+  filter: drop-shadow(0 0 24px rgba(118, 43, 255, 0.15));
 }
 
 @media (max-width: 768px) {
   .bg-watermark {
-    width: 200px;
-    height: 200px;
+    width: 260px;
+    height: 260px;
     top: 60px;
-    right: -30px;
-    opacity: 0.03;
+    right: -40px;
+    opacity: 0.09;
   }
   .circuit-decoration {
     opacity: 0.04;
@@ -168,6 +170,8 @@ body {
   width: 52px;
   height: 52px;
   flex-shrink: 0;
+  object-fit: contain;
+  filter: drop-shadow(0 0 8px rgba(38, 198, 255, 0.35));
 }
 
 .header-text {
@@ -727,7 +731,9 @@ body {
 .footer-logo {
   width: 44px;
   height: 44px;
-  opacity: 0.6;
+  opacity: 0.85;
+  object-fit: contain;
+  filter: drop-shadow(0 0 10px rgba(118, 43, 255, 0.35));
 }
 
 .footer-lines {

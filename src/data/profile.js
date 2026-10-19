@@ -22,7 +22,7 @@ const profile = {
     name: "CYBER NEXUS",
     subtitle: "CLUB",
     tagline: "MORE THAN A CLUB — A COMMUNITY",
-    logoPath: "/cyber-nexus-logo.svg",
+    logoPath: "/cyber-nexus-logo.png",
   },
 
   // Contact Links
